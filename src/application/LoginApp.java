@@ -21,6 +21,8 @@ public class LoginApp extends Application {
     private Button btEntrar, btSair; // Botões para entrar e sair
     private static Stage stage; // Palco principal da aplicação
 
+    
+    // Método start
     @Override
     public void start(Stage stage) throws Exception {
         initComponents();
@@ -28,7 +30,7 @@ public class LoginApp extends Application {
         Scene scene = new Scene(pane); // Cria uma cena com o painel como raiz
         stage.setScene(scene); // Configura a cena no palco
         stage.setResizable(false); // Desabilita a redimensionamento da janela
-        stage.setTitle("Login - GolFX"); // Define o título da janela
+        stage.setTitle("Login"); // Define o título da janela
         stage.show(); // Mostra a janela
         initLayout(); // Inicializa o layout dos componentes
         LoginApp.stage = stage; // Armazena a referência do palco
